@@ -1,11 +1,18 @@
 import LogoIcon from "../../assets/logo.svg"
 import { Link } from "react-router-dom"
 import { Divide as Hamburger } from 'hamburger-react'
-import { useState } from "react"
+import { useEffect } from "react"
+import useBodyFlow from "../../hooks/useBodyFlow"
 import "./NavBar.css"
 
 const NavBar = () => {
-    const [isOpen, setOpen] = useState(false)
+
+    const { isOpen, handleBodyFlow, setOpen } = useBodyFlow()
+
+    useEffect(() => {
+        handleBodyFlow()
+    }, [isOpen])
+
     return (
         <>
             <div className={`nav-container ${isOpen && "background-navbar-active"}`}>
@@ -24,8 +31,6 @@ const NavBar = () => {
                     </ul>
                 </nav>
             }
-
-
         </>
     )
 }
