@@ -1,0 +1,86 @@
+.destination-container {
+    background-image: url(../../assets/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.destination-p {
+    color: rgb(128, 128, 128);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.destination-p span {
+    margin-left: .5rem;
+    color: #fff;
+}
+
+.planet-link {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 1rem .5rem;
+    text-transform: uppercase;
+}
+
+.destination-image {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.destination-planet-link {
+    display: flex;
+    justify-content: center;
+}
+
+.destination-planet-name,
+.destination-planet-description,
+.destination-planet-distance-p {
+    color: #fff;
+    text-align: center;
+}
+
+.destination-planet-distance-p {
+    font-size: 1.3rem;
+    margin-top: .4rem;
+    text-transform: uppercase;
+}
+
+.destination-planet-distance-h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.destination-planet-description {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Barlow Condensed", sans-serif;
+    line-height: 1.3rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    padding-bottom: 1.5rem;
+}
+
+.destination-planet-name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: .4rem;
+    margin-bottom: 0;
+}
+
+.destination-planet-data p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.active-link {
+    text-decoration: underline;
+    text-underline-offset: .4rem;
+    text-decoration-thickness: .1rem;
+}

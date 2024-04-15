@@ -24,8 +24,8 @@ const NavBar = () => {
             {isOpen &&
                 <nav className="navbar">
                     <ul className="navbar-ul">
-                        <li className="navbar-li"><Link className="navbar-a">00. <span>Home</span> </Link></li>
-                        <li className="navbar-li"><Link className="navbar-a">01. <span>Destination</span></Link></li>
+                        <li className="navbar-li"><Link to={"/"} className="navbar-a">00. <span>Home</span> </Link></li>
+                        <li className="navbar-li"><Link to={"/destination"} className="navbar-a">01. <span>Destination</span></Link></li>
                         <li className="navbar-li"><Link className="navbar-a">02. <span>Crew</span></Link></li>
                         <li className="navbar-li"><Link className="navbar-a">03. <span>Technology</span></Link></li>
                     </ul>

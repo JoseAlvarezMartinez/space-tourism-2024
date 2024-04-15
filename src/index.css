@@ -4,6 +4,11 @@
     font-style: normal;
 }
 
+:root {
+    --fontBarlow: font-family: "Barlow Condensed", sans-serif;
+    --fontBellefair: font-family: "Bellefair", serif;
+}
+
 a {
     text-decoration: none;
 }
