@@ -1,0 +1,57 @@
+.header-home {
+    background-image: url(../../assets/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-home-container {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-p,
+.header-h2 {
+    color: #fff;
+}
+
+.header-h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-h2 span {
+    font-size: 5rem;
+}
+
+.header-p {
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+.explore-circle {
+    background-color: #fff;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-circle-a {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}

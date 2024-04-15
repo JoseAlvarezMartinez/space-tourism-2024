@@ -1,0 +1,19 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+.navbar-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 2.5rem;
+}
+.navbar-a{
+    color:#fff;
+}
