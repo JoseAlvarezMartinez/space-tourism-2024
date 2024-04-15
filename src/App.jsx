@@ -4,7 +4,6 @@ function App() {
 console.log(crew)
   return (
     <>
-
     </>
   )
 }
