@@ -1,0 +1,56 @@
+.technology-container {
+    background-image: url(../../assets/background-technology-mobile.jpg);
+    height: 100%;
+}
+
+.project-button {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+.project-button-i{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+.project-image{
+    width: 80%;
+    height: 10rem;
+    object-fit:cover;
+    display: block;
+    margin: 2rem auto;
+}
+
+.technology-name,.technology-terminology{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.technology-terminology{
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(186, 186, 186);
+}
+.technology-description{
+    color:  rgb(186, 186, 186);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Barlow Condensed", sans-serif;
+    padding-bottom: 2rem;
+}

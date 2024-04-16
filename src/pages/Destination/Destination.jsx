@@ -1,5 +1,4 @@
 import NavBar from "../../components/NavBar/NavBar"
-import Planet from "../../components/Planet/Planet"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { planets } from "../../db/data"
@@ -19,8 +18,8 @@ const Destination = () => {
                 {planets.map(planet =>
                     <Link
                         key={planet.id}
-                        onClick={() => setActualPlanet(planet)}
                         to={`/destination/${planet.id}`}
+                        onClick={() => setActualPlanet(planet)}
                         className={`planet-link ${actualPlanet.id === planet.id && "active-link"} `}>{planet.name}</Link>
                 )}
 

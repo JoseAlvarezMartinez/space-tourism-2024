@@ -10,11 +10,12 @@
 .background-navbar-active,
 .navbar {
     background-color: #ffffff2f;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3rem);
 }
 
 .navbar {
     position: absolute;
+    right: 0;
     height: calc(100% - 4rem);
     width: 70%;
 }

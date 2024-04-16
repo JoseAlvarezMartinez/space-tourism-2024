@@ -16,8 +16,9 @@ const NavBar = () => {
     return (
         <>
             <div className={`nav-container ${isOpen && "background-navbar-active"}`}>
-                <img className="logo" src={LogoIcon} alt="Logo" />
-
+                <Link to="/">
+                    <img className="logo" src={LogoIcon} alt="Logo" />
+                </Link>
                 <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />
             </div>
 
@@ -26,8 +27,8 @@ const NavBar = () => {
                     <ul className="navbar-ul">
                         <li className="navbar-li"><Link to={"/"} className="navbar-a">00. <span>Home</span> </Link></li>
                         <li className="navbar-li"><Link to={"/destination"} className="navbar-a">01. <span>Destination</span></Link></li>
-                        <li className="navbar-li"><Link className="navbar-a">02. <span>Crew</span></Link></li>
-                        <li className="navbar-li"><Link className="navbar-a">03. <span>Technology</span></Link></li>
+                        <li className="navbar-li"><Link to={"/crew"} className="navbar-a">02. <span>Crew</span></Link></li>
+                        <li className="navbar-li"><Link to={"/technology"} className="navbar-a">03. <span>Technology</span></Link></li>
                     </ul>
                 </nav>
             }

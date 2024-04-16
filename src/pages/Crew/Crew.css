@@ -1,0 +1,27 @@
+.crew-container {
+    background-image: url(../../assets/background-crew-mobile.jpg);
+    height: 100%;
+}
+
+.circle-member {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 50%;
+}
+.circle-member-container{
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+}
+.crew-image{
+    max-width: 22rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    height: 21rem;
+}
+.active-circle{
+    background-color: #fff;
+}

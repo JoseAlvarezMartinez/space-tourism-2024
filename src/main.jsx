@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home/Home.jsx';
 import Destination from './pages/Destination/Destination.jsx';
+import Crew from './pages/Crew/Crew.jsx';
+import Technology from './pages/Technology/Technology.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,22 @@ const router = createBrowserRouter([
   {
     path: "/destination/:id",
     element: <Destination />,
+  },
+  {
+    path: "/crew",
+    element: <Crew />,
+  },
+  {
+    path: "/crew/:id",
+    element: <Crew />,
+  },
+  {
+    path: "/technology",
+    element: <Technology />,
+  },
+  {
+    path: "/technology/:id",
+    element: <Technology />,
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
