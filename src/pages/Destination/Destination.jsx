@@ -28,10 +28,14 @@ const Destination = () => {
             <p className="destination-planet-description">{description}</p>
 
             <div className="destination-planet-data">
-                <h3 className="destination-planet-distance-h3">avg. distance</h3>
-                <p className="destination-planet-distance-p">{distance}</p>
-                <h3 className="destination-planet-distance-h3">est. travel time</h3>
-                <p className="destination-planet-distance-p">{travelTime}</p>
+                <section>
+                    <h3 className="destination-planet-distance-h3">avg. distance</h3>
+                    <p className="destination-planet-distance-p">{distance}</p>
+                </section>
+                <section>
+                    <h3 className="destination-planet-distance-h3">est. travel time</h3>
+                    <p className="destination-planet-distance-p">{travelTime}</p>
+                </section>
             </div>
         </main >
     )

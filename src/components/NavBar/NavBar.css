@@ -13,11 +13,14 @@
     backdrop-filter: blur(3rem);
 }
 
+.navbar-inactive {
+    display: none;
+}
+
 .navbar {
     position: absolute;
     right: 0;
     height: calc(100% - 4rem);
-    width: 70%;
 }
 
 .navbar-ul {
@@ -33,13 +36,48 @@
     gap: 1.5rem;
 }
 
+.navbar-a span {
+    font-weight: bolder;
+}
+
 .navbar-a {
     color: #fff;
     font-size: 1.2rem;
-    font-weight: bolder;
     text-transform: uppercase;
 }
 
 .logo {
     width: 2.5rem;
+}
+
+@media only screen and (min-width:600px) {
+    .hamburguer-tablet {
+        display: none;
+    }
+
+    .navbar-a {
+        font-size: 1rem;
+
+    }
+
+    .navbar-inactive {
+        display: block;
+        position: unset;
+    }
+
+    .navbar-ul {
+        flex-direction: row;
+        justify-content: unset;
+        padding: 2rem 1rem;
+    }
+
+    .navbar-responsive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-a span {
+        display: none;
+    }
 }

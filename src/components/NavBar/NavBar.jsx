@@ -15,23 +15,27 @@ const NavBar = () => {
 
     return (
         <>
-            <div className={`nav-container ${isOpen && "background-navbar-active"}`}>
-                <Link to="/">
-                    <img className="logo" src={LogoIcon} alt="Logo" />
-                </Link>
-                <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />
-            </div>
+            <div className="navbar-responsive">
+                <div className={`nav-container ${isOpen && "background-navbar-active"}`}>
+                    <Link to="/">
+                        <img className="logo" src={LogoIcon} alt="Logo" />
+                    </Link>
+                    <div className="hamburguer-tablet">
+                        <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />
+                    </div>
+                </div>
 
-            {isOpen &&
-                <nav className="navbar">
+
+
+                <nav className={`navbar ${isOpen ? "navbar-active" : "navbar-inactive"}`}>
                     <ul className="navbar-ul">
-                        <li className="navbar-li"><Link to={"/"} className="navbar-a">00. <span>Home</span> </Link></li>
-                        <li className="navbar-li"><Link to={"/destination"} className="navbar-a">01. <span>Destination</span></Link></li>
-                        <li className="navbar-li"><Link to={"/crew"} className="navbar-a">02. <span>Crew</span></Link></li>
-                        <li className="navbar-li"><Link to={"/technology"} className="navbar-a">03. <span>Technology</span></Link></li>
+                        <li className="navbar-li"><Link to={"/"} className="navbar-a"> <span>00.</span>Home</Link></li>
+                        <li className="navbar-li"><Link to={"/destination"} className="navbar-a"><span>01.</span>Destination</Link></li>
+                        <li className="navbar-li"><Link to={"/crew"} className="navbar-a"><span>02.</span>Crew</Link></li>
+                        <li className="navbar-li"><Link to={"/technology"} className="navbar-a"> <span>03</span>Technology</Link></li>
                     </ul>
                 </nav>
-            }
+            </div>
         </>
     )
 }

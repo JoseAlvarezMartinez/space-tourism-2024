@@ -27,6 +27,7 @@
 }
 
 .destination-image {
+    max-width: 20rem;
     width: 60%;
     margin: 0 auto;
     display: block;
@@ -61,6 +62,7 @@
 
 .destination-planet-description {
     width: 90%;
+    max-width: 20rem;
     margin: 0 auto;
     font-family: "Barlow Condensed", sans-serif;
     line-height: 1.3rem;
@@ -84,4 +86,20 @@
     text-decoration: underline;
     text-underline-offset: .4rem;
     text-decoration-thickness: .1rem;
+}
+
+@media only screen and (min-width: 600px){
+    .destination-container{
+        background-image: url(../../assets/background-destination-tablet.jpg);
+    }
+    .destination-p{
+        text-align: start;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .destination-planet-data{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
 }
