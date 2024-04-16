@@ -98,11 +98,17 @@
         flex-direction: row-reverse;
         align-items: center;
     }
-
+    .project-button{
+        width: 5rem;
+        height: 5rem;
+    }
+    .technology-description{
+        font-size: 1.3rem;
+    }
     .technology-desktop-container {
         display: flex;
         gap: 2rem;
-        margin-left: 3rem;
+        margin-left: 9rem;
     }
 
     .project-image{
