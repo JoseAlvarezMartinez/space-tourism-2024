@@ -88,18 +88,36 @@
     text-decoration-thickness: .1rem;
 }
 
-@media only screen and (min-width: 600px){
-    .destination-container{
+@media only screen and (min-width: 600px) {
+    .destination-container {
         background-image: url(../../assets/background-destination-tablet.jpg);
     }
-    .destination-p{
+
+    .destination-p {
         text-align: start;
         width: 90%;
         margin: 2rem auto;
     }
-    .destination-planet-data{
+
+    .destination-planet-data {
         display: flex;
         justify-content: center;
         gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .destination-container {
+        background-image: url(../../assets/background-destination-desktop.jpg);
+    }
+    .destination-flex-desktop{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        margin-top: 4rem;
+    }
+    .destination-image{
+        margin: 0;
     }
 }
