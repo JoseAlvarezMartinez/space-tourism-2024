@@ -20,10 +20,10 @@ const Technology = () => {
                         <div
                             onClick={() => setProjectState(project)}
                             key={project.id}
-                            className="project-button">
+                            className={`project-button ${project.id === projectState.id && "active-button"}`}>
                             <Link
                                 to={`/technology/${project.id}`}
-                                className="project-button-i">{++i}</Link>
+                                className={`project-button-i ${project.id === projectState.id && "project-active-link"}`}>{++i}</Link>
                         </div>
                     ))
                 }

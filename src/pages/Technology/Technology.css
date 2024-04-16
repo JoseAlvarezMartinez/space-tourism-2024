@@ -1,6 +1,7 @@
 .technology-container {
     background-image: url(../../assets/background-technology-mobile.jpg);
     height: 100%;
+    min-height: 100vh;
 }
 
 .project-button {
@@ -12,6 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .project-buttons-container{
@@ -22,6 +25,7 @@
 .project-button-i{
     color: #fff;
     font-size: 1.2rem;
+ 
 }
 
 
@@ -41,16 +45,30 @@
     margin-top: 0;
 }
 .technology-terminology{
+    margin-bottom: 0;
+}
+.technology-name{
+    margin-bottom: 0;
+}
+.technology-terminology{
     font-size: 1rem;
     margin-top: 1rem;
     color: rgb(186, 186, 186);
 }
 .technology-description{
     color:  rgb(186, 186, 186);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     width: 90%;
     margin: 0 auto;
     font-family: "Barlow Condensed", sans-serif;
     padding-bottom: 2rem;
+    padding-top: .5rem;
+}
+.active-button{
+    cursor: pointer;
+    background-color: #fff;
+}
+.project-active-link{
+    color: #000;
 }
