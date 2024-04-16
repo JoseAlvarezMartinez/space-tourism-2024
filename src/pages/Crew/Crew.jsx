@@ -26,9 +26,9 @@ const Crew = () => {
                     </Link>
                 ))}
             </div>
-            <p className="">{rol}</p>
-            <h2>{name}</h2>
-            <p>{description}</p>
+            <p className="crew-rol">{rol}</p>
+            <h2 className="crew-name">{name}</h2>
+            <p className="crew-description">{description}</p>
 
         </main>
     )

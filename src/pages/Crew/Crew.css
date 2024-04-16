@@ -1,6 +1,9 @@
 .crew-container {
     background-image: url(../../assets/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
+    min-height: 100vh;
 }
 
 .circle-member {
@@ -9,19 +12,48 @@
     background-color: rgba(255, 255, 255, 0.459);
     border-radius: 50%;
 }
-.circle-member-container{
+
+.circle-member-container {
     display: flex;
     justify-content: center;
     gap: .8rem;
 }
-.crew-image{
-    max-width: 22rem;
+
+.crew-image {
+
     display: block;
     margin: 0 auto;
     margin-bottom: 2rem;
     object-fit: cover;
-    height: 21rem;
+    height: 18rem;
 }
-.active-circle{
+
+.active-circle {
     background-color: #fff;
+}
+
+.crew-rol {
+    color: rgb(186, 186, 186);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.crew-name{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.crew-name,
+.crew-description {
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.crew-description {
+    padding: .5rem 0 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.1rem;
+    color: rgb(186, 186, 186);
 }

@@ -7,7 +7,7 @@ const Technology = () => {
 
     const [projectState, setProjectState] = useState(projects[0])
 
-    const { image, name,description } = projectState
+    const { image, name, description } = projectState
     return (
         <main className="technology-container">
             <NavBar />
