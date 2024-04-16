@@ -13,24 +13,32 @@ const Technology = () => {
             <NavBar />
             <p className="destination-p">03. <span>space launch 101</span></p>
 
-            <img className="project-image" src={image} alt="" />
-            <div className="project-buttons-container">
-                {
-                    projects.map((project, i) => (
-                        <div
-                            onClick={() => setProjectState(project)}
-                            key={project.id}
-                            className={`project-button ${project.id === projectState.id && "active-button"}`}>
-                            <Link
-                                to={`/technology/${project.id}`}
-                                className={`project-button-i ${project.id === projectState.id && "project-active-link"}`}>{++i}</Link>
-                        </div>
-                    ))
-                }
+            <div className="technology-desktop-flex">
+                <img className="project-image" src={image} alt="" />
+
+                <div className="technology-desktop-container">
+                    <div className="project-buttons-container">
+                        {
+                            projects.map((project, i) => (
+                                <div
+                                    onClick={() => setProjectState(project)}
+                                    key={project.id}
+                                    className={`project-button ${project.id === projectState.id && "active-button"}`}>
+                                    <Link
+                                        to={`/technology/${project.id}`}
+                                        className={`project-button-i ${project.id === projectState.id && "project-active-link"}`}>{++i}</Link>
+                                </div>
+                            ))
+                        }
+                    </div>
+
+                    <section>
+                        <h2 className="technology-terminology">The terminology...</h2>
+                        <h3 className="technology-name">{name}</h3>
+                        <p className="technology-description">{description}</p>
+                    </section>
+                </div>
             </div>
-            <h2 className="technology-terminology">The terminology...</h2>
-            <h3 className="technology-name">{name}</h3>
-            <p className="technology-description">{description}</p>
         </main>
     )
 }

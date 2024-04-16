@@ -33,7 +33,7 @@ const NavBar = () => {
                         <li className="navbar-li"><Link to={"/"} className={`navbar-a ${pathname === "/" && "active-navbar-link"}`}> <span>00.</span>Home</Link></li>
                         <li className="navbar-li"><Link to={"/destination"} className={`navbar-a ${pathname.includes("/destination") && "active-navbar-link"}`}><span>01.</span>Destination</Link></li>
                         <li className="navbar-li"><Link to={"/crew"}  className={`navbar-a ${pathname.includes("/crew") && "active-navbar-link"}`}><span>02.</span>Crew</Link></li>
-                        <li className="navbar-li"><Link to={"/technology"} className={`navbar-a ${pathname === "/technology" && "active-navbar-link"}`}> <span>03</span>Technology</Link></li>
+                        <li className="navbar-li"><Link to={"/technology"} className={`navbar-a ${pathname.includes("/technology") && "active-navbar-link"}`}> <span>03</span>Technology</Link></li>
                     </ul>
                 </nav>
             </div>

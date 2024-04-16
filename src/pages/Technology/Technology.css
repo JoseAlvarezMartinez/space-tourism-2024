@@ -19,46 +19,52 @@
     cursor: pointer;
 }
 
-.project-buttons-container{
+.project-buttons-container {
     display: flex;
     justify-content: center;
     gap: .5rem;
 }
-.project-button-i{
+
+.project-button-i {
     color: #fff;
     font-size: 1.2rem;
- 
+
 }
 
 
-.project-image{
-    width: 80%;
+.project-image {
+    width: 100%;
     height: 10rem;
-    object-fit:cover;
+    object-fit: cover;
     display: block;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
 
-.technology-name,.technology-terminology{
+.technology-name,
+.technology-terminology {
     color: #fff;
     text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
     margin-top: 0;
 }
-.technology-terminology{
+
+.technology-terminology {
     margin-bottom: 0;
 }
-.technology-name{
+
+.technology-name {
     margin-bottom: 0;
 }
-.technology-terminology{
+
+.technology-terminology {
     font-size: 1rem;
     margin-top: 1rem;
     color: rgb(186, 186, 186);
 }
-.technology-description{
-    color:  rgb(186, 186, 186);
+
+.technology-description {
+    color: rgb(186, 186, 186);
     font-size: 1.1rem;
     text-align: center;
     width: 90%;
@@ -67,10 +73,54 @@
     padding-bottom: 2rem;
     padding-top: .5rem;
 }
-.active-button{
+
+.active-button {
     cursor: pointer;
     background-color: #fff;
 }
-.project-active-link{
+
+.project-active-link {
     color: #000;
+}
+
+@media only screen and (min-width: 600px) {
+    .technology-description {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .technology-container{
+        background-image: url(../../assets/background-technology-desktop.jpg);
+    }
+    .technology-desktop-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .technology-desktop-container {
+        display: flex;
+        gap: 2rem;
+        margin-left: 3rem;
+    }
+
+    .project-image{
+        height: 40vh;
+    }
+    .project-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .technology-name,
+    .technology-terminology,
+    .technology-description {
+        text-align: unset;
+    }
+
+    .technology-description {
+        margin-left: 0;
+    }
 }
