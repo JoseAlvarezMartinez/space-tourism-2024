@@ -4,15 +4,10 @@
     background-size: cover;
     height: 100vh;
 }
-
-.header-home-container {
-    width: 90%;
-    height: 50%;
-    margin: 0 auto;
-
+.desktop-responsive-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 85%;
 }
 
 .header-p,
@@ -35,7 +30,8 @@
 .header-p {
     font-family: "Barlow Condensed", sans-serif;
     text-align: center;
-    margin-top: 0;
+    width: 80%;
+    margin: 0 auto 1rem;
 }
 
 .explore-circle {
@@ -55,4 +51,38 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #000;
+}
+
+@media only screen and (min-width: 600px) {
+    .header-home {
+        background-image: url(../../assets/background-home-tablet.jpg);
+        background-position: bottom;
+    }
+
+    .header-p {
+        width: 50%;
+    }
+    .desktop-responsive-container{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-home {
+        background-image: url(../../assets/background-home-desktop.jpg);
+    }
+    .header-home-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desktop-responsive-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .header-p {
+        margin: 0;
+   
+    }
 }
