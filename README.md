@@ -6,3 +6,7 @@
   <li>React Router</li>
   <li>Vite</li>
 </ul>
+
+🔋 Características:
+👉Diseño 100% responsive
+👉API local
