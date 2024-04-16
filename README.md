@@ -7,8 +7,8 @@
   <li>Vite</li>
 </ul>
 
-🔋 Características:
-<ul style={list-style:none;}>
-  <li>👉Diseño 100% responsive</li>
-  <li>👉API local</li>
-</ul>
+<h2>🔋 Características:</h2>
+
+  <h3>👉Diseño 100% responsive</h3>
+  <h3>👉API local</h3>
+
