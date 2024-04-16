@@ -2,6 +2,7 @@
     background-image: url(../../assets/background-destination-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
     height: 100%;
 }
 
