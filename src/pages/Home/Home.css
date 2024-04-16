@@ -2,12 +2,16 @@
     background-image: url(../../assets/background-home-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+
 }
+
 .desktop-responsive-container {
     display: flex;
     flex-direction: column;
-    height: 85%;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-p,
@@ -32,6 +36,7 @@
     text-align: center;
     width: 80%;
     margin: 0 auto 1rem;
+    font-size: 1.2rem;
 }
 
 .explore-circle {
@@ -62,27 +67,41 @@
     .header-p {
         width: 50%;
     }
-    .desktop-responsive-container{
-        justify-content: center;
-    }
 }
 
 @media only screen and (min-width: 900px) {
     .header-home {
         background-image: url(../../assets/background-home-desktop.jpg);
     }
-    .header-home-container{
+
+    .explore-circle {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .header-home-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .desktop-responsive-container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        height: 67vh;
     }
+
+    .header-h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .header-h2 span {
+        font-size: calc(1.8rem * 4);
+    }
+
     .header-p {
         margin: 0;
-   
     }
 }

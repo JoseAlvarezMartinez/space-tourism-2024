@@ -14,22 +14,26 @@ const Crew = () => {
         <main className="crew-container">
             <NavBar />
             <p className="destination-p">02 <span>meet your crew</span></p>
+            <div className="crew-desktop-flex">
+                <img className="crew-image" src={image} alt="" />
 
-            <img className="crew-image" src={image} alt="" />
-            <div className="circle-member-container">
-                {crew.map(crewMember => (
-                    <Link
-                        onClick={() => setCrewMemberState(crewMember)}
-                        to={`/crew/${crewMember.id}`}>
-                        <div className={`circle-member ${crewMember.id === crewMemberState.id && "active-circle"}`}>
-                        </div>
-                    </Link>
-                ))}
+                <div className="crew-desktop-container">
+                    <div className="circle-member-container">
+                        {crew.map(crewMember => (
+                            <Link
+                                key={crewMember.id}
+                                onClick={() => setCrewMemberState(crewMember)}
+                                to={`/crew/${crewMember.id}`}>
+                                <div className={`circle-member ${crewMember.id === crewMemberState.id && "active-circle"}`}>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                    <p className="crew-rol">{rol}</p>
+                    <h2 className="crew-name">{name}</h2>
+                    <p className="crew-description">{description}</p>
+                </div>
             </div>
-            <p className="crew-rol">{rol}</p>
-            <h2 className="crew-name">{name}</h2>
-            <p className="crew-description">{description}</p>
-
         </main>
     )
 }

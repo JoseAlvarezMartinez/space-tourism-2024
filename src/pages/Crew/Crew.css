@@ -38,7 +38,8 @@
     text-transform: uppercase;
     margin-bottom: 0;
 }
-.crew-name{
+
+.crew-name {
     font-size: 1.5rem;
     text-transform: uppercase;
 }
@@ -56,4 +57,36 @@
     font-family: "Barlow Condensed", sans-serif;
     font-size: 1.1rem;
     color: rgb(186, 186, 186);
+}
+
+@media only screen and (min-width: 600px) {
+    .crew-description {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .crew-desktop-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .crew-description,.crew-name,.crew-rol{
+        margin: 0;
+        text-align: unset;
+    }
+    .crew-image{
+        margin: 0;
+        height: 25rem;
+    }
+    .crew-desktop-container {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+    }
+    .circle-member-container{
+        order: 1;
+        justify-content: unset;
+    }
 }
