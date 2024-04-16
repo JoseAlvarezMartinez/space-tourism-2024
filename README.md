@@ -8,5 +8,7 @@
 </ul>
 
 🔋 Características:
-👉Diseño 100% responsive
-👉API local
+<ul style={list-style:none;}>
+  <li>👉Diseño 100% responsive</li>
+  <li>👉API local</li>
+</ul>
