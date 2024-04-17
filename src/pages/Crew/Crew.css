@@ -7,10 +7,12 @@
 }
 
 .circle-member {
+    background-color: rgba(255, 255, 255, 0.459); 
+    border-radius: 50%;
     width: 1rem;
     height: 1rem;
-    background-color: rgba(255, 255, 255, 0.459);
-    border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
 
 .circle-member-container {
@@ -28,7 +30,7 @@
     height: 18rem;
 }
 
-.active-circle {
+.active-circle{
     background-color: #fff;
 }
 
@@ -72,20 +74,26 @@
         flex-direction: row-reverse;
         justify-content: center;
     }
-    .crew-description,.crew-name,.crew-rol{
+
+    .crew-description,
+    .crew-name,
+    .crew-rol {
         margin: 0;
         text-align: unset;
     }
-    .crew-image{
+
+    .crew-image {
         margin: 0;
         height: 25rem;
     }
+
     .crew-desktop-container {
         display: flex;
         flex-direction: column;
         width: 35%;
     }
-    .circle-member-container{
+
+    .circle-member-container {
         order: 1;
         justify-content: unset;
     }

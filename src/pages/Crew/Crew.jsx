@@ -1,7 +1,6 @@
 import NavBar from "../../components/NavBar/NavBar"
 import { crew } from "../../db/data"
 import { useState } from "react"
-import { Link } from "react-router-dom"
 import "./Crew.css"
 
 const Crew = () => {
@@ -20,13 +19,12 @@ const Crew = () => {
                 <div className="crew-desktop-container">
                     <div className="circle-member-container">
                         {crew.map(crewMember => (
-                            <Link
+                            <button
                                 key={crewMember.id}
                                 onClick={() => setCrewMemberState(crewMember)}
-                                to={`/crew/${crewMember.id}`}>
-                                <div className={`circle-member ${crewMember.id === crewMemberState.id && "active-circle"}`}>
-                                </div>
-                            </Link>
+                                className={`circle-member ${crewMember.id === crewMemberState.id ? "active-circle" : ""}`}>
+
+                            </button>
                         ))}
                     </div>
                     <p className="crew-rol">{rol}</p>
@@ -34,7 +32,7 @@ const Crew = () => {
                     <p className="crew-description">{description}</p>
                 </div>
             </div>
-        </main>
+        </main >
     )
 }
 
