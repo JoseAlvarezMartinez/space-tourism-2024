@@ -28,6 +28,9 @@
 .project-button-i {
     color: #fff;
     font-size: 1.2rem;
+    background-color: unset;
+    border: 0;
+    cursor: pointer;
 
 }
 

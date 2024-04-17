@@ -49,11 +49,7 @@
 .logo {
     width: 2.5rem;
 }
-.active-navbar-link{
-    text-decoration: underline;
-    text-underline-offset: 2rem;
-    text-decoration-thickness: .1rem;
-}
+
 
 @media only screen and (min-width:600px) {
     .hamburguer-tablet {
@@ -85,10 +81,16 @@
     .navbar-a span {
         display: none;
     }
+    .active-navbar-link{
+        text-decoration: underline;
+        text-underline-offset: 2rem;
+        text-decoration-thickness: .1rem;
+    }
 }
 
 @media only screen and (min-width:900px){
     .navbar-responsive{
         padding: 2rem;
     }
+
 }

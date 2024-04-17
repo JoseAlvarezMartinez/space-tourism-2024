@@ -1,7 +1,6 @@
 import "./Technology.css"
 import NavBar from "../../components/NavBar/NavBar"
 import { projects } from "../../db/data"
-import { Link } from "react-router-dom"
 import { useState } from "react"
 const Technology = () => {
 
@@ -24,9 +23,8 @@ const Technology = () => {
                                     onClick={() => setProjectState(project)}
                                     key={project.id}
                                     className={`project-button ${project.id === projectState.id && "active-button"}`}>
-                                    <Link
-                                        to={`/technology/${project.id}`}
-                                        className={`project-button-i ${project.id === projectState.id && "project-active-link"}`}>{++i}</Link>
+                                    <button
+                                        className={`project-button-i ${project.id === projectState.id && "project-active-link"}`}>{++i}</button>
                                 </div>
                             ))
                         }
