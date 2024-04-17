@@ -24,6 +24,9 @@
     font-family: "Barlow Condensed", sans-serif;
     margin: 1rem .5rem;
     text-transform: uppercase;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
 }
 
 .destination-image {

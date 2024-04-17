@@ -1,5 +1,4 @@
 import NavBar from "../../components/NavBar/NavBar"
-import { Link } from "react-router-dom"
 import { useState } from "react"
 import { planets } from "../../db/data"
 import "./Destination.css"
@@ -19,11 +18,10 @@ const Destination = () => {
                 <div className="destination-desktop-container">
                     <div className="destination-planet-link">
                         {planets.map(planet =>
-                            <Link
+                            <button
                                 key={planet.id}
-                                to={`/destination/${planet.id}`}
                                 onClick={() => setActualPlanet(planet)}
-                                className={`planet-link ${actualPlanet.id === planet.id && "active-link"} `}>{planet.name}</Link>
+                                className={`planet-link ${actualPlanet.id === planet.id && "active-link"} `}>{planet.name}</button>
                         )}
 
                     </div>
